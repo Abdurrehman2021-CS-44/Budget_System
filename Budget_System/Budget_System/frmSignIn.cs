@@ -72,7 +72,7 @@ namespace Budget_System
             {
                 MessageBox.Show("Please fill both the username and password.");
             }
-            else if (txtUsername.Text == "dev" && txtPassword.Text == "dev123")
+            else if (txtUsername.Text == "dev" && txtPassword.Text == "123")
             {
                 this.Hide();
                 frmMainPage form = new frmMainPage();
@@ -93,6 +93,12 @@ namespace Budget_System
         private void pbUsers_MouseLeave(object sender, EventArgs e)
         {
             pbUsers.BorderStyle = BorderStyle.None;
+        }
+
+        private void lnklblUnRegister_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmSignUp form = new frmSignUp();
+            form.ShowDialog();
         }
     }
 }

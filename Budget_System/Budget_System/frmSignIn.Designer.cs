@@ -266,6 +266,7 @@ namespace Budget_System
             this.lnklblUnRegister.TabIndex = 4;
             this.lnklblUnRegister.TabStop = true;
             this.lnklblUnRegister.Text = "Not Register Yet? Click Here";
+            this.lnklblUnRegister.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnklblUnRegister_LinkClicked);
             // 
             // frmSignIn
             // 
