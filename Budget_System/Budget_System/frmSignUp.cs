@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using System.Configuration;
 
 namespace Budget_System
 {
@@ -54,6 +56,13 @@ namespace Budget_System
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnSignIn_Click(object sender, EventArgs e)
+        {
+            var con = Configuration.getInstance().getConnection();
+            SqlCommand cmd = new SqlCommand("Insert Into LoginCredentials Values(@username,@password,@role)");
+            cmd.ExecuteNonQuery();
         }
     }
 }

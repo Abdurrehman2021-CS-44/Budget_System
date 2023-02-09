@@ -40,7 +40,7 @@ namespace Budget_System
             this.lblLoginPage = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.btnBack = new System.Windows.Forms.Button();
-            this.btnSignIn = new System.Windows.Forms.Button();
+            this.btnSignUp = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -173,7 +173,7 @@ namespace Budget_System
             this.tableLayoutPanel3.ColumnCount = 1;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.Controls.Add(this.btnBack, 0, 1);
-            this.tableLayoutPanel3.Controls.Add(this.btnSignIn, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.btnSignUp, 0, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 256);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -198,19 +198,20 @@ namespace Budget_System
             this.btnBack.UseVisualStyleBackColor = false;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
-            // btnSignIn
+            // btnSignUp
             // 
-            this.btnSignIn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(5)))), ((int)(((byte)(12)))));
-            this.btnSignIn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnSignIn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnSignIn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(172)))), ((int)(((byte)(78)))));
-            this.btnSignIn.Location = new System.Drawing.Point(6, 6);
-            this.btnSignIn.Margin = new System.Windows.Forms.Padding(6);
-            this.btnSignIn.Name = "btnSignIn";
-            this.btnSignIn.Size = new System.Drawing.Size(291, 51);
-            this.btnSignIn.TabIndex = 1;
-            this.btnSignIn.Text = "Create";
-            this.btnSignIn.UseVisualStyleBackColor = false;
+            this.btnSignUp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(5)))), ((int)(((byte)(12)))));
+            this.btnSignUp.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnSignUp.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnSignUp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(172)))), ((int)(((byte)(78)))));
+            this.btnSignUp.Location = new System.Drawing.Point(6, 6);
+            this.btnSignUp.Margin = new System.Windows.Forms.Padding(6);
+            this.btnSignUp.Name = "btnSignUp";
+            this.btnSignUp.Size = new System.Drawing.Size(291, 51);
+            this.btnSignUp.TabIndex = 1;
+            this.btnSignUp.Text = "Create";
+            this.btnSignUp.UseVisualStyleBackColor = false;
+            this.btnSignUp.Click += new System.EventHandler(this.btnSignIn_Click);
             // 
             // frmSignUp
             // 
@@ -242,6 +243,6 @@ namespace Budget_System
         private System.Windows.Forms.ComboBox cmbRole;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.Button btnBack;
-        private System.Windows.Forms.Button btnSignIn;
+        private System.Windows.Forms.Button btnSignUp;
     }
 }
